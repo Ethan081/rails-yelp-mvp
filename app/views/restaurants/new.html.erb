@@ -1,9 +1,11 @@
 <h1>Ajouter un restaurant</h1>
-
-<%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :phone_number %>
-  <%= f.input :category, collection: Restaurant: :CATEGORIES %>
-  <%= f.submit  'Creer le restaurant' %>
-<% end %>
+<div class="container">
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category, collection: Restaurant::CATEGORIES %>
+    <%= f.submit 'Valider', class: 'btn btn-success' %>
+  <% end %>
+  <%= link_to 'Retour a la liste', restaurants_path, class: "btn btn-info" %>
+</div>
