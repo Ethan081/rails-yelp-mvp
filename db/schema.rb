@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170809100135) do
+ActiveRecord::Schema.define(version: 20170809105257) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string   "name"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20170809100135) do
   create_table "reviews", force: :cascade do |t|
     t.text     "content"
     t.integer  "rating"
-    t.string   "reference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
