@@ -7,6 +7,7 @@ restaurants_attributes = [
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
     description:  "Face au jardin, on découvre une salle lumineuse... et la cuisine d'Éric Frechon.",
+    phone_number: ""
     stars:        2,
     category:    "italian"
   },
